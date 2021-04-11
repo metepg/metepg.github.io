@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="styles.min.css" as="style">
+  <link rel="stylesheet" href="pik.css">
+  <link rel="stylesheet" href="styles.min.css">
+
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Apuri</title>
+</head>
+
+<body>
+  <div id='content'>
+    <div id='options'>
+
+      <div class='optionsController'>
+        <label for="lastCycle">Viimeiset kuukautiset</label>
+        <br />
+        <input name='lastCycle' autocomplete="off" id="lastCycle" placeholder="PP.KK.VVVV">
+      </div>
+      <div class='optionsController'>
+        <label>Kierron pituus</label>
+        <br />
+        <select id='pituus'></select>
+      </div>
+      <div class='optionsController'>
+        <label>Vuotopäivät</label>
+        <br />
+        <select id='vuotopvt'></select>
+      </div>
+    </div>
+    <div id='calendarController'>
+      <div class='calendar-box'>
+        <div class="calendar-header">
+          <span class="calendar-year"></span>
+        </div>
+        <div class="calendar-months">
+          <div id='prev' class="calendar-arrow text-button"></div>
+          <div class="current-month"></div>
+          <div id='next' class="calendar-arrow text-button"></div>
+        </div>
+        <div class="calendar-controls">
+          <div class="calendar-body">
+            <div class="calendar-days">
+            </div>
+            <div class="calendar-dates">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='vkot'>
+        <div id='week0'></div>
+        <div id='week1'></div>
+        <div id='week2'></div>
+        <div id='week3'></div>
+        <div id='week4'></div>
+        <div id='week5'></div>
+      </div>
+    </div>
+  </div>
+  <script src="local.js" defer></script>
+  <script src="flat.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
